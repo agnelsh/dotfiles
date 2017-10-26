@@ -14,8 +14,11 @@ export PATH=$PATH:/usr/local/go/bin
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export GOPATH=$HOME/gopath
+export FLYPATH=$HOME/Repos/concourse/
+export PATH=$PATH:$FLYPATH
 export PATH=$PATH:$HOME/bin/
-
+export PATH=$PATH:$HOME/google-cloud-sdk/bin
+export PATH=$PATH:$HOME/fly
 # ZSH Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
