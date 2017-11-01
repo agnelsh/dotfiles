@@ -170,3 +170,5 @@ linux-*.deb
 vars.tf
 parameters.json
 vars.json
+terraform.tfvars
+.terraform/*
