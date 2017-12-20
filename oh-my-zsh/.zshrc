@@ -72,8 +72,10 @@ plugins=(git)
 plugins+=(zsh-autosuggestions)
 #plugins+=(falkor)
 
+source $HOME/.fonts/*.sh
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
+
 
 # Load Aliases
 source ~/.alias
