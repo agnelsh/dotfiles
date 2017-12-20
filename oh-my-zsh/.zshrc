@@ -20,6 +20,8 @@ export PATH=$PATH:$FLYPATH
 export PATH=$PATH:$HOME/bin/
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:$HOME/fly
+
+source $HOME/.fonts/*.sh
 # ZSH Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -70,15 +72,16 @@ POWERLEVEL9K_MODE='awesome-patched'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 plugins+=(zsh-autosuggestions)
-#plugins+=(falkor)
+plugins+=(agnelantony)
 
-source ~/.fonts/*.sh
+
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
 
 # Load Aliases
 source ~/.alias
+
 
 
 
