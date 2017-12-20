@@ -15,7 +15,7 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias r="cd ~/Repos"
 alias t="cd ~/Temp"
-alias pr="cd ~/Repos/priv-repos"
+alias mr="cd ~/Repos/mck-repos"
 alias pbr="cd ~/Repos/pub-repos"
 alias pb="cd ~/Repos/playbooks"
 
