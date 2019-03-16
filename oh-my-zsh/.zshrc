@@ -20,6 +20,7 @@ export PATH=$PATH:$FLYPATH
 export PATH=$PATH:$HOME/bin/
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:$HOME/fly
+export PATH=$PATH:$HOME/Execs/
 
 
 source $HOME/.fonts/*.sh
