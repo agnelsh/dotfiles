@@ -21,6 +21,7 @@ export PATH=$PATH:$HOME/bin/
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:$HOME/fly
 
+
 source $HOME/.fonts/*.sh
 # ZSH Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -81,7 +82,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Load Aliases
 source ~/.alias
-
-
-
-

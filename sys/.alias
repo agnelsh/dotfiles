@@ -15,8 +15,8 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
 alias r="cd ~/Repos"
 alias t="cd ~/Temp"
-alias mr="cd ~/Repos/mck-repos"
-alias pbr="cd ~/Repos/pub-repos"
+alias mr="cd ~/Repos/mckesson"
+alias pub="cd ~/Repos/pub"
 alias pb="cd ~/Repos/playbooks"
 
 # Check color flag
