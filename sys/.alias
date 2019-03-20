@@ -20,6 +20,8 @@ alias pub="cd ~/Repos/pub"
 alias pb="cd ~/Repos/playbooks"
 alias gcp="cd ~/Repos/mckesson/gcp"
 alias dot="cd ~/Repos/pub/dotfiles"
+alias mpull="git pull --rebase origin master"
+alias dpull="git pull --rebase origin develop"
 
 # Check color flag
 if ls --color > /dev/null 2>&1; then # GNU `ls`
