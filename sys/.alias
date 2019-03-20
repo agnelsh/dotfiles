@@ -18,6 +18,8 @@ alias t="cd ~/Temp"
 alias mr="cd ~/Repos/mckesson"
 alias pub="cd ~/Repos/pub"
 alias pb="cd ~/Repos/playbooks"
+alias gcp="cd ~/Repos/mckesson/gcp"
+alias dot="cd ~/Repos/pub/dotfiles"
 
 # Check color flag
 if ls --color > /dev/null 2>&1; then # GNU `ls`
