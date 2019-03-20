@@ -22,6 +22,8 @@ alias gcp="cd ~/Repos/mckesson/gcp"
 alias dot="cd ~/Repos/pub/dotfiles"
 alias mpull="git pull --rebase origin master"
 alias dpull="git pull --rebase origin develop"
+alias mpush="git push -u origin master"
+alias dpush="git push -u origin develop"
 
 # Check color flag
 if ls --color > /dev/null 2>&1; then # GNU `ls`
