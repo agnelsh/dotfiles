@@ -25,7 +25,7 @@ export PATH=$PATH:$HOME/Execs/
 
 source $HOME/.fonts/*.sh
 # ZSH Theme
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Awesome Patched Fonts
 POWERLEVEL9K_MODE='awesome-patched'
