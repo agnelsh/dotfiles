@@ -70,3 +70,4 @@ alias hosts='sudo vim /etc/hosts'
 
 alias tf="terraform"
 alias py="python"
+alias gproject="gcloud config set project"
