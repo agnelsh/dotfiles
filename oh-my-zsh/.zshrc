@@ -16,12 +16,15 @@ export PATH=$PATH:/usr/local/go/bin
 export ZSH=$HOME/.oh-my-zsh
 export GOPATH=$HOME/gopath
 export FLYPATH=$HOME/Repos/concourse/
+export NEO4J_HOME=$HOME/neo4j-community-4.0.0/bin
 export PATH=$PATH:$FLYPATH
 export PATH=$PATH:$HOME/bin/
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:$HOME/Execs/fly
 export PATH=$PATH:$HOME/Execs/
-
+export PATH=$PATH:$HOME/opt/anaconda3/bin
+export PATH=/usr/local/tflint/bin:$PATH
+export PATH=$NEO4J_HOME:$PATH
 
 source $HOME/.fonts/*.sh
 # ZSH Theme
