@@ -17,6 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 export GOPATH=$HOME/gopath
 export FLYPATH=$HOME/Repos/concourse/
 export NEO4J_HOME=$HOME/neo4j-community-4.0.0/bin
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.6.jdk/Contents/Home"
 export PATH=$PATH:$FLYPATH
 export PATH=$PATH:$HOME/bin/
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
@@ -25,6 +26,7 @@ export PATH=$PATH:$HOME/Execs/
 export PATH=$PATH:$HOME/opt/anaconda3/bin
 export PATH=/usr/local/tflint/bin:$PATH
 export PATH=$NEO4J_HOME:$PATH
+export PATH=$JAVA_HOME/java/bin:$PATH
 
 source $HOME/.fonts/*.sh
 # ZSH Theme
