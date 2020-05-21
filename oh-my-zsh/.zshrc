@@ -27,6 +27,12 @@ export PATH=$PATH:$HOME/opt/anaconda3/bin
 export PATH=/usr/local/tflint/bin:$PATH
 export PATH=$NEO4J_HOME:$PATH
 export PATH=$JAVA_HOME/java/bin:$PATH
+export PATH=$HOME/.gem:$PATH
+export PATH=/usr/local/opt/libpq/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.7.0/bin:$PATH
+export PATH=$PATH:$GOPATH/bin
+
 
 source $HOME/.fonts/*.sh
 # ZSH Theme
@@ -89,7 +95,23 @@ source $ZSH/oh-my-zsh.sh
 # Load Aliases
 source ~/.alias
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/agnelantony/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/agnelantony/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/agnelantony/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/agnelantony/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('$HOME/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
