@@ -1,0 +1,11 @@
+name: cloud
+channels:
+  - conda-forge
+  - defaults
+  - r
+dependencies:
+  - python=3.9
+  - avro 
+  - fastavro 
+  - simplejson 
+  - librdkafka=1.1.0

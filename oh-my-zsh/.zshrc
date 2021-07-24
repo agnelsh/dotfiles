@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # -*- mode:sh; -*-
 ###############################################################################
 #              __ ___  _           __  __      __ _________  _   _
@@ -9,7 +16,7 @@
 #
 ###############################################################################
 
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/opt/anaconda3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 # Path to your oh-my-zsh installation.
@@ -23,7 +30,6 @@ export PATH=$PATH:$HOME/bin/
 export PATH=$PATH:$HOME/google-cloud-sdk/bin
 export PATH=$PATH:$HOME/Execs/fly
 export PATH=$PATH:$HOME/Execs/
-export PATH=$PATH:$HOME/opt/anaconda3/bin
 export PATH=/usr/local/tflint/bin:$PATH
 export PATH=$NEO4J_HOME:$PATH
 export PATH=$JAVA_HOME/java/bin:$PATH
@@ -39,7 +45,7 @@ source $HOME/.fonts/*.sh
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Awesome Patched Fonts
-POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL10K_MODE='awesome-patched'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -115,3 +121,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+conda activate cloud
+source activate cloud
+echo "*****************cloud env activated******************"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
